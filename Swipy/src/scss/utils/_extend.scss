@@ -1,0 +1,11 @@
+@use '../utils/varaible' as *;
+%button{
+    display: inline-block;
+    background-color: $font-color-primary;
+    color: $font-color-white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 20px 20px;
+}

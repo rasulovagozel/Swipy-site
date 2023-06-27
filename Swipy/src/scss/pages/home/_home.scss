@@ -1,0 +1,70 @@
+@use '../../utils/varaible' as *;
+@use '../../utils/mixin' as *;
+@use '../../utils/extend' as *;
+#home{
+    .container{
+        font-family: $font-family;
+        margin: 0 auto;
+        .row{
+            padding: 0 0 100px 0;
+            .col-lg-6{
+                .texts{
+                    padding-top: 130px;
+                    h2{
+                        @include Text($size:$font-size-header-texts,$color:$font-color-default,$weight:$font-weight-700,$line-h:70px,$margin:0 0 25px 0);
+                    }
+                    p{
+                        @include Text($size:$font-size-texts,$color:$font-color-text,$weight:$font-weight-400,$line-h:22px,$margin:0 0 40px 0);
+                    }
+                    .buttons{
+                        @include Flexible($direction:row,$align-i:center,$gap:20px);
+                        .button1{
+                            button{
+                                display: inline-block;
+                                background-color: $font-color-primary;
+                                color: $font-color-white;
+                                border: none;
+                                border-radius: 10px;
+                                font-weight: 500;
+                                font-size: 15px;
+                                padding: 20px 20px;
+                            }
+                        }
+                        .button2{
+                            margin-left: 20px;
+                            i{
+                                cursor: pointer;
+                                color: $font-color-primary;
+                                position: relative;
+                                &::after{
+                                position: absolute;
+                                content: "";
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 8px;
+                                border: 1px solid $font-color-primary;
+                                top: -17px;
+                                left: -20px;
+                                }
+                            }
+                            a{
+                                margin-left: 20px;
+                                @include Text($size:15px,$color:$font-color-default,$weight:$font-weight-500,$decoration:none);
+                                transition: 0.3s ease-in-out;
+                                &:hover{
+                                    color: $font-color-number;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-lg-6{
+                img{
+                    max-width: 450px;
+                    margin-top: 130px;
+                }
+            }
+        }
+    }
+}

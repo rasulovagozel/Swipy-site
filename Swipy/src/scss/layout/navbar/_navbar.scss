@@ -1,0 +1,130 @@
+@use "../../utils/varaible" as *;
+@use "../../utils/mixin" as *;
+nav {
+  .container {
+    font-family: $font-family;
+    margin: 0 auto;
+    .row {
+      padding-top: 20px;
+      @include Flexible($align-i: center);
+      .col-lg-3 {
+        img {
+          max-width: 120px;
+          cursor: pointer;
+        }
+      }
+      .col-lg-6 {
+        .lists {
+          ul {
+            @include Flexible($gap: 25px, $align-i: center);
+            li {
+              list-style: none;
+              a {
+                @include Text(
+                  $size: $font-size-navbar,
+                  $decoration: none,
+                  $color: $font-color-default,
+                  $weight: $font-weight-600
+                );
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  color: $font-color-primary;
+                }
+              }
+              .home {
+                color: $font-color-primary;
+              }
+            }
+          }
+        }
+      }
+      .col-lg-3 {
+        .icons {
+          @include Flexible($gap: 40px);
+          i {
+            position: relative;
+            cursor: pointer;
+            z-index: 1;
+            &:nth-child(2) {
+              color: $font-color-white;
+            }
+            &:nth-child(2)::after {
+              position: absolute;
+              content: "";
+              z-index: -1;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              top: -11px;
+              left: -12px;
+              background-color: $font-color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  .offcanvas-body{
+    .container{
+      font-family: $font-family;
+      .row{
+      img{
+        max-width: 150px;
+      }
+      p{
+        @include Text($size:13px,$color:$font-color-text,$weight:$font-weight-400,$line-h:20px,$margin:20px 0 20px 0);
+      }
+      h2{
+        @include Text($size:24px,$color:$font-color-default,$weight:$font-weight-500);
+      }
+      .contact{
+        margin-bottom: 25px;
+        .contact_items{
+          @include Flexible($align-i: center,$gap:20px);
+          .img{
+            i{
+              color: $font-color-primary;
+              size: 25px;
+            }
+          }
+          .text{
+            p{
+              @include Text($size:13px,$color:$font-color-text,$weight:$font-weight-500);
+            }
+            span{
+              @include Text($size:14px,$color:$font-color-default,$weight:$font-weight-400);
+            }
+          }
+        }
+      }
+      .icons{
+        @include Flexible($align-i:center,$gap:20px);
+        i{
+          font-size: 25px;
+          color: $font-color-primary;
+          cursor: pointer;
+          transition: 0.1s ease-in-out;
+          &:hover{
+            color: $font-color-default;
+          }
+        }
+      }
+      }
+    }
+  }
+}
+@media(max-width:998px){
+  nav{
+    .container{
+      .row{
+        .col-md-3{
+          .lists{
+            ul{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

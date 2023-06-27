@@ -1,0 +1,44 @@
+@use '../../utils/varaible' as *;
+@use '../../utils/mixin' as *;
+@use '../../utils/extend' as *;
+main{
+    #services{
+        .container{
+            font-family: $font-family;
+            .row{
+            margin-top: 100px;
+            h3{
+                @include Text($size:17px,$color:$font-color-number,$weight:$font-weight-500,$margin:0 0 25px 0,$align:center);
+            }
+            h2{
+                @include Text($size:30px,$color:$font-color-default,$weight:$font-weight-600,$margin:0 0 35px 0,$align:center);
+            }
+            .col-lg-4{
+                .card{
+                    border-radius: 10px;
+                    box-shadow: 0 0 12px 0 rgb(230, 229, 229);
+                    padding: 30px 0 60px 0;
+                    @include Flexible($align-i:center,$direction:column,$justify-c:center);
+                    img{
+                        max-width: 100px;
+                    }
+                    h4{
+                        @include Text($size:20px,$color:$font-color-default,$weight:$font-weight-500,$margin:20px 0 20px 0,$align:center);
+                    }
+                    p{
+                        @include Text($size:14px,$color:$font-color-text,$weight:$font-weight-400,$margin:0 0 30px 0,$align:center,$line-h:20px);
+                        max-width: 250px;
+                    }
+                    a{
+                        @include Text($size:13px,$color:$font-color-more,$weight:$font-weight-500,$align:center,$decoration:none);
+                        transition: 0.3s ease-in-out;
+                        &:hover{
+                            color:$font-color-primary
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}

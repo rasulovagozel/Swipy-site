@@ -1,0 +1,76 @@
+@use "../../utils/varaible" as *;
+@use "../../utils/mixin" as *;
+@use "../../utils/extend" as *;
+main {
+  #projects {
+    background-color: $font-color-default;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    .container {
+        font-family: $font-family;
+      .row {
+        padding-top: 100px;
+      .col-lg-12{
+        @include Flexible($direction:row,$align-i:center,$justify-c:space-between);
+        margin-bottom: 30px;
+        .texts{
+            h3{
+                @include Text($size:16px,$color:$font-color-number,$weight:$font-weight-500,$margin:0 0 20px 0);
+            }
+            h2{
+                @include Text($size:37px,$color:$font-color-white,$weight:$font-weight-600,$margin:0 0 20px 0);
+            }
+        }
+        .button{
+            a{
+                @include Text($size:16px,$color:$font-color-white,$weight:$font-weight-500,$decoration:none,$padding:15px 20px);
+                border: 1px solid $font-color-white;
+                border-radius: 8px;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    background-color: $font-color-number;
+                    border: none;
+                }
+            }
+        }
+      }
+      .col-lg-6{
+        ._card{
+            border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+            &:hover._card .img img{
+                transform: scale(1.1);
+            }
+            background-color: white;
+            .img{
+                overflow: hidden;
+                width: 100%;
+                height: 350px;
+            img{
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                object-fit: cover;
+                transition: 0.3s ease-in-out;
+            }
+        }
+        h4{
+            @include Text($size:14px,$color:$font-color-primary,$weight:$font-weight-400,$padding:30px 0 0 30px);
+            transition: 0.3s ease-in-out;
+            &:hover{
+                color: $font-color-number;
+            }
+        }
+        h2{
+            @include Text($size:28px,$color:$font-color-default,$weight:$font-weight-600,$padding:30px);
+            transition: 0.3s ease-in-out;
+            &:hover{
+                color: $font-color-number;
+            }
+        }
+        }
+      }
+      }
+    }
+  }
+}

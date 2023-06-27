@@ -1,0 +1,46 @@
+@use "../../utils/varaible" as *;
+@use "../../utils/mixin" as *;
+@use "../../utils/extend" as *;
+main{
+    #process{
+        .container{
+            font-family: $font-family;
+            .row{
+                margin-top: 130px;
+                .col-lg-7{
+                    .texts{
+                        h4{
+                            @include Text($size:16px,$color:$font-color-primary,$weight:$font-weight-500,$margin:0 0 20px 0);
+                        }
+                        h3{
+                            @include Text($size:35px,$color:$font-color-default,$weight:$font-weight-600,$margin:0 0 20px 0,$line-h:50px);
+                            max-width: 400px;
+                        }
+                        .accordion-item{
+                            border-bottom: none;
+                            .accordion-button{
+                                margin-bottom: 20px;
+                                border-radius: 20px;
+                                box-shadow: 0 0 12px 0 rgb(226, 223, 223);
+                                padding: 20px 25px;
+                                width: 500px;
+                            }
+                            .accordion-body{
+                                font-size: 14px;
+                                color: $font-color-text;
+                                line-height: 20px;
+                                max-width: 500px;
+                            }
+                        }
+                    }
+                }
+                .col-lg-4{
+                    margin-top: 70px;
+                    img{
+                        max-width: 450px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@use "../../utils/varaible" as *;
+@use "../../utils/mixin" as *;
+@use "../../utils/extend" as *;
+main {
+  #price {
+    .container {
+      font-family: $font-family;
+      .row {
+        margin-top: 130px;
+        .col-lg-12 {
+          h3 {
+            @include Text(
+              $size: 16px,
+              $color: $font-color-number,
+              $weight: $font-weight-500,
+              $margin: 0 0 20px 0,
+              $align: center
+            );
+          }
+          h2 {
+            @include Text(
+              $size: 35px,
+              $color: $font-color-default,
+              $weight: $font-weight-600,
+              $margin: 0 0 40px 0,
+              $align: center
+            );
+          }
+        }
+        .col-lg-4 {
+          .card {
+            &:hover.card button{
+                background-color: $font-color-primary;
+                color: $font-color-white;
+            }
+            box-shadow: 0 0 12px 0 rgb(231, 226, 226);
+            border: none;
+            border-radius: 20px;
+            padding: 30px;
+            h3 {
+              @include Text(
+                $size: 17px,
+                $color: $font-color-primary,
+                $weight: $font-weight-500,
+                $margin: 0 0 20px 0
+              );
+            }
+            h2 {
+              @include Text(
+                $size: 35px,
+                $color: $font-color-primary,
+                $weight: $font-weight-600,
+                $margin: 0 0 20px 0
+              );
+            }
+            hr {
+              width: 100%;
+            }
+            a {
+              @include Text(
+                $size: 12px,
+                $color: $font-color-text,
+                $weight: $font-weight-400,
+                $margin: 0 0 30px 0,
+                $decoration: none
+              );
+            }
+            ul {
+              margin-bottom: 20px;
+              li {
+                @include Text(
+                  $size: 14px,
+                  $color: $font-color-text,
+                  $weight: $font-weight-400,
+                  $margin: 0 0 20px 0
+                );
+                i {
+                  padding-right: 14px;
+                }
+              }
+            }
+            button {
+              display: inline-block;
+              background-color: $font-color-white;
+              color: $font-color-primary;
+              border: 1px solid $font-color-primary;
+              border-radius: 10px;
+              font-weight: 500;
+              font-size: 15px;
+              width: 80%;
+              padding: 20px 5px;
+              margin: 0 auto;
+              transition: 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

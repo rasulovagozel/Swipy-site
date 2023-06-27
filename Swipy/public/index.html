@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swipy</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../src/assets/apple-touch-icon-114x114-precomposed.png"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../../reset.css" />
+  </head>
+  <body>
+    <div
+      class="bg-image"
+      style="background-image: url('../src/assets/main-bg.jpg')"
+    >
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <img src="../src/assets/logo.png" alt="" />
+            </div>
+            <div class="col-lg-6 col-md-3 col-sm-6">
+              <div class="lists">
+                <ul>
+                  <li><a href="" class="home">Home+</a></li>
+                  <li><a href="">About+</a></li>
+                  <li><a href="">Pages+</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Portfolio+</a></li>
+                  <li>
+                    <a
+                      href=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+              <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i
+                  class="fa-solid fa-bars"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="container">
+              <div class="row">
+                <img src="../src/assets/logo.png" alt="" />
+                <p>
+                  Suspendisse interdum consectetur libero id. Fermentum leo vel
+                  orci porta non. Euismod viverra nibh cras pulvinar suspen.
+                </p>
+                <hr />
+                <h2>Get In Touch</h2>
+                <div class="contact">
+                  <div class="contact_items">
+                    <div class="img">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                      <p>Email</p>
+                      <span>support@devsdesign.net</span>
+                    </div>
+                  </div>
+                  <div class="contact_items">
+                    <div class="img">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="text">
+                      <p>Phone</p>
+                      <span>(00) 456 1122 7890</span>
+                    </div>
+                  </div>
+                  <div class="contact_items">
+                    <div class="img">
+                      <i class="fa-solid fa-location"></i>
+                    </div>
+                    <div class="text">
+                      <p>Location</p>
+                      <span>Riverside 255, San Francisco, USA</span>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="icons">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-pinterest"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section
+        id="home"
+        style="background-image: url('../src/assets/main-bg.jpg')"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="texts">
+                <h2>We Design Digital Products</h2>
+                <p>
+                  We are a digital agency that focuses on solving your problems
+                  by making a product that will exceed your expectations so far.
+                </p>
+                <div class="buttons">
+                  <div class="button1">
+                    <button>Get Started</button>
+                  </div>
+                  <div class="button2">
+                    <i class="fa-solid fa-play"></i>
+                    <a href="">Play Intro</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img src="../src/assets/man-min.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <main>
+      <section id="services">
+        <div class="container">
+          <div class="row g-5">
+            <h3>WHAT WE DO</h3>
+            <h2>Services we can help you.</h2>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="../src/assets/icons1.png" alt="" />
+                <h4>Digital Marketing</h4>
+                <p>
+                  Ullamcorper malesuada proin libero nunc. Quis ipsum suspen.
+                </p>
+                <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="../src/assets/icons2.png" alt="" />
+                <h4>Video Production</h4>
+                <p>
+                  Ullamcorper malesuada proin libero nunc. Quis ipsum suspen.
+                </p>
+                <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="../src/assets/icons3.png" alt="" />
+                <h4>Branding Design</h4>
+                <p>
+                  Ullamcorper malesuada proin libero nunc. Quis ipsum suspen.
+                </p>
+                <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="../src/assets/icons4.png" alt="" />
+                <h4>UX Design</h4>
+                <p>
+                  Ullamcorper malesuada proin libero nunc. Quis ipsum suspen.
+                </p>
+                <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="../src/assets/icons5.png" alt="" />
+                <h4>Web Development</h4>
+                <p>
+                  Ullamcorper malesuada proin libero nunc. Quis ipsum suspen.
+                </p>
+                <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="../src/assets/icons6.png" alt="" />
+                <h4>eCommerce</h4>
+                <p>
+                  Ullamcorper malesuada proin libero nunc. Quis ipsum suspen.
+                </p>
+                <a href="">Read More <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../src/assets/about.png" alt="" />
+            </div>
+            <div class="col-lg-5">
+              <div class="texts">
+                <h4>ABOUT SWIPY</h4>
+                <h2>Creative agency that help you go ahead.</h2>
+                <p>
+                  Darkness they’re, moved whales great or void great man one man
+                  from blessed so our. Dominion good face was sixth male kind
+                  offer together beginning saw fifth midst they’re spirit which
+                  gathered. Appear saying blessed working experience.
+                </p>
+                <div class="numbers">
+                  <div class="number">
+                    <span>+0 0</span>
+                    <a href="">Year of experience</a>
+                  </div>
+                  <div class="number">
+                    <span>+ 0 k</span>
+                    <a href="">Complete Project</a>
+                  </div>
+                  <div class="number">
+                    <span>+ 1</span>
+                    <a href="">Client Satisfied</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="texts">
+                <h3>PORTFOLIO</h3>
+                <h2>Our latest projects</h2>
+              </div>
+              <div class="button">
+                <a href=""
+                  >See All Project <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="_card">
+                <div class="img">
+                  <img src="../src/assets/port1.jpg" alt="" />
+                </div>
+                <h4>Branding</h4>
+                <h2>Webi UI Redesign</h2>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="_card">
+                <div class="img">
+                  <img src="../src/assets/port2.jpg" alt="" />
+                </div>
+                <h4>Branding</h4>
+                <h2>Book Cover</h2>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="_card">
+                <div class="img">
+                  <img src="../src/assets/port3.jpg" alt="" />
+                </div>
+                <h4>Branding</h4>
+                <h2>Mockup Design</h2>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="_card">
+                <div class="img">
+                  <img src="../src/assets/port4.jpg" alt="" />
+                </div>
+                <h4>Branding</h4>
+                <h2>Nike Air Max</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="process">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="texts">
+                <h4>WORK PROCESS</h4>
+                <h3>Strategy led design in every details</h3>
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Analysis & Idea
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Sit amet mauris commodo quis imperdiet massa tincidunt.
+                        Ut enim blandit volutpat maecenas.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Wireframs, Mockup & Phototype
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Sit amet mauris commodo quis imperdiet massa tincidunt.
+                        Ut enim blandit volutpat maecenas.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Development
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Sit amet mauris commodo quis imperdiet massa tincidunt.
+                        Ut enim blandit volutpat maecenas.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        Testing & Lunuch
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Sit amet mauris commodo quis imperdiet massa tincidunt.
+                        Ut enim blandit volutpat maecenas.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <img src="../src/assets/process-img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="price">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-12">
+              <h3>OUR PRICING</h3>
+              <h2>Find the Right Plan.</h2>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <h3>FREE</h3>
+                <h2>$00.00</h2>
+                <hr />
+                <a href="">Perfect for Prosonal</a>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> 1 Users</li>
+                  <li><i class="fa-solid fa-check"></i> SaaS Metrics</li>
+                  <li><i class="fa-solid fa-check"></i> Team Collaboration</li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Upload Your Document
+                  </li>
+                  <li><i class="fa-solid fa-check"></i> Export PDF</li>
+                </ul>
+                <button>Get Started</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <h3>FREE</h3>
+                <h2>$00.00</h2>
+                <hr />
+                <a href="">Perfect for Prosonal</a>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> 1 Users</li>
+                  <li><i class="fa-solid fa-check"></i> SaaS Metrics</li>
+                  <li><i class="fa-solid fa-check"></i> Team Collaboration</li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Upload Your Document
+                  </li>
+                  <li><i class="fa-solid fa-check"></i> Export PDF</li>
+                </ul>
+                <button>Get Started</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card">
+                <h3>FREE</h3>
+                <h2>$00.00</h2>
+                <hr />
+                <a href="">Perfect for Prosonal</a>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> 1 Users</li>
+                  <li><i class="fa-solid fa-check"></i> SaaS Metrics</li>
+                  <li><i class="fa-solid fa-check"></i> Team Collaboration</li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Upload Your Document
+                  </li>
+                  <li><i class="fa-solid fa-check"></i> Export PDF</li>
+                </ul>
+                <button>Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12">
+            <img src="../src/assets/logo-light.png" alt="" />
+            <p>You will get weekly update on Email</p>
+            <input type="email" placeholder="Email Address" />
+            <button>Subscribe</button>
+            <div class="icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-9 col-sm-12">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+               <p>Services</p>
+               <ul>
+                <li>Digital Marketing</li>
+                <li>Video Production</li>
+                <li>UX Design</li>
+                <li>Web Development</li>
+               </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <p>Resources</p>
+                <ul>
+                 <li>About</li>
+                 <li>Portfolio Two Column</li>
+                 <li>Services</li>
+                 <li>Blog</li>
+                 <li>Contact</li>
+                </ul>
+               </div>
+               <div class="col-lg-3 col-md-6 col-sm-12">
+                <p>Information</p>
+                <ul>
+                 <li>Ta-134/A, Gulshan Badda
+                  Link Rd, Dhaka</li>
+                 <li>(+880)155 69569 365</li>
+                 <li>support@rstheme.com</li>
+                 <li>infoname@gmail.com</li>
+                </ul>
+               </div>
+            </div>
+          </div>
+          <hr>
+          <div class="col-lg-12">
+            <div class="author">
+              <p> © 2022 Swipy. Designed By RSTheme</p>
+            </div>
+            <div class="about">
+              <p>About Me | Contact</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section id="modal">
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              =
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div for="" class="name">
+                  <div class="firstName">
+                    <label for="">First name</label>
+                    <input type="text" />
+                  </div>
+                  <div class="lastName">
+                    <label for="">Last name</label>
+                    <input type="text" />
+                  </div>
+                </div>
+
+                <div for="" class="user">
+                  <label for="">Username</label>
+                  <input type="text" />
+                </div>
+                <div for="" class="email">
+                  <label for="">Email</label>
+                  <input type="email" />
+                </div>
+                <div for="" class="number">
+                  <label for="">Mobile Number</label>
+                  <input type="number" placeholder="Enter 10 digit" />
+                </div>
+                <div for="" class="country">
+                  <div class="city">
+                    <label for="">City</label>
+                    <input type="text" />
+                  </div>
+                  <div class="state">
+                    <label for="">State</label>
+                    <select name="" id="">
+                      <option value="">California</option>
+                      <option value="">Ohio</option>
+                      <option value="">Detroid</option>
+                    </select>
+                  </div>
+                  <div class="zip">
+                    <label for="">Zip</label>
+                    <input type="number" />
+                  </div>
+                </div>
+                <div for="" class="password">
+                  <label for="">Password</label>
+                  <input type="password" placeholder="Password" />
+                </div>
+                <div for="" class="password">
+                  <label for="">Confirm-Password</label>
+                  <input type="password" placeholder="Password" />
+                </div>
+                <div for="" class="check">
+                  <input type="checkbox" />
+                  <span>Agree to terms and conditions</span>
+                </div>
+                <button>Register</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/82d8f57187.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
